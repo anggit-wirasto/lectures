@@ -1,105 +1,84 @@
-# Memilih Laptop Terbaik untuk Keperluan Bisnis Menggunakan Metode MAUT
+# Implementasi MAUT dalam Python
 
-## Pendahuluan
-
-Metode MAUT (Multi-Attribute Utility Theory) digunakan untuk mengevaluasi dan membandingkan alternatif berdasarkan beberapa atribut atau kriteria. Dalam kasus ini, kita akan memilih laptop terbaik untuk keperluan bisnis berdasarkan tiga kriteria: Harga, Kinerja, dan Daya Tahan Baterai.
-
-## Kriteria dan Bobot
-
-Kriteria yang digunakan dan bobotnya adalah sebagai berikut:
-- Harga: 0.4
-- Kinerja: 0.3
-- Daya Tahan Baterai: 0.3
-
-## Data Alternatif
-
-| Alternatif | Harga (Rp juta) | Kinerja (1-10) | Daya Tahan Baterai (jam) |
-|------------|-----------------|----------------|--------------------------|
-| A1         | 15              | 8              | 10                       |
-| A2         | 20              | 9              | 8                        |
-| A3         | 18              | 7              | 9                        |
+MAUT, atau Multi-Attribute Utility Theory, adalah salah satu metode pengambilan keputusan multikriteria yang digunakan untuk mengevaluasi dan membandingkan alternatif berdasarkan beberapa atribut atau kriteria. Berikut adalah langkah-langkah umum dalam menggunakan metode MAUT:
 
 ## Langkah-langkah MAUT
 
-### 1. Normalisasi Matriks Keputusan
+1. **Identifikasi Kriteria dan Alternatif:**
+   - Tentukan kriteria yang relevan untuk pengambilan keputusan.
+   - Identifikasi alternatif yang akan dievaluasi.
 
-Normalisasi dilakukan dengan metode min-max:
-\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]
-
-### 2. Menghitung Utility
-
-Nilai utility untuk setiap alternatif dan kriteria dihitung sebagai berikut:
-
-| Alternatif | Harga | Kinerja | Daya Tahan Baterai | Norm Harga | Norm Kinerja | Norm Baterai | Utility Harga | Utility Kinerja | Utility Baterai | Total Utility |
-|------------|-------|---------|--------------------|------------|--------------|--------------|---------------|-----------------|-----------------|---------------|
-| A1         | 15    | 8       | 10                 | 1          | 0.5          | 1            | 0.4           | 0.15            | 0.3             | 0.85          |
-| A2         | 20    | 9       | 8                  | 0          | 1            | 0            | 0             | 0.3             | 0               | 0.30          |
-| A3         | 18    | 7       | 9                  | 0.4        | 0            | 0.5          | 0.16          | 0               | 0.15            | 0.31          |
-
-### 3. Peringkat Alternatif
-
-Berdasarkan total utility, peringkat alternatif adalah sebagai berikut:
-
-| Alternatif | Total Utility | Peringkat |
-|------------|---------------|-----------|
-| A1         | 0.85          | 1         |
-| A3         | 0.31          | 2         |
-| A2         | 0.30          | 3         |
-
-## Kesimpulan
-
-Laptop A1 dengan total utility tertinggi adalah pilihan terbaik berdasarkan kriteria yang telah ditentukan.
-
-## Implementasi dalam Excel
-
-Berikut adalah langkah-langkah untuk mengimplementasikan perhitungan ini dalam Excel:
-
-1. **Buat Tabel Data Alternatif dan Kriteria:**
-
-    | Alternatif | Harga | Kinerja | Daya Tahan Baterai |
-    |------------|-------|---------|--------------------|
-    | A1         | 15    | 8       | 10                 |
-    | A2         | 20    | 9       | 8                  |
-    | A3         | 18    | 7       | 9                  |
-
-2. **Buat Tabel Bobot Kriteria:**
-
-    | Kriteria             | Bobot |
-    |----------------------|-------|
-    | Harga                | 0.4   |
-    | Kinerja              | 0.3   |
-    | Daya Tahan Baterai   | 0.3   |
+2. **Penentuan Bobot Kriteria:**
+   - Tentukan bobot untuk masing-masing kriteria berdasarkan tingkat kepentingannya.
+   - Bobot biasanya dinyatakan dalam bentuk angka, di mana jumlah total bobot adalah 1 atau 100%.
 
 3. **Normalisasi Matriks Keputusan:**
+   - Normalisasi dilakukan untuk mengubah nilai kriteria ke dalam skala yang sama.
+   - Salah satu metode normalisasi adalah menggunakan skala 0-1 atau 0-100.
 
-    | Alternatif | Harga | Kinerja | Daya Tahan Baterai | Norm Harga | Norm Kinerja | Norm Baterai |
-    |------------|-------|---------|--------------------|------------|--------------|--------------|
-    | A1         | 15    | 8       | 10                 | = (B2-MIN($B$2:$B$4))/(MAX($B$2:$B$4)-MIN($B$2:$B$4)) | = (C2-MIN($C$2:$C$4))/(MAX($C$2:$C$4)-MIN($C$2:$C$4)) | = (D2-MIN($D$2:$D$4))/(MAX($D$2:$D$4)-MIN($D$2:$D$4)) |
-    | A2         | 20    | 9       | 8                  | = (B3-MIN($B$2:$B$4))/(MAX($B$2:$B$4)-MIN($B$2:$B$4)) | = (C3-MIN($C$2:$C$4))/(MAX($C$2:$C$4)-MIN($C$2:$C$4)) | = (D3-MIN($D$2:$D$4))/(MAX($D$2:$D$4)-MIN($D$2:$D$4)) |
-    | A3         | 18    | 7       | 9                  | = (B4-MIN($B$2:$B$4))/(MAX($B$2:$B$4)-MIN($B$2:$B$4)) | = (C4-MIN($C$2:$C$4))/(MAX($C$2:$C$4)-MIN($C$2:$C$4)) | = (D4-MIN($D$2:$D$4))/(MAX($D$2:$D$4)-MIN($D$2:$D$4)) |
+4. **Penghitungan Utility:**
+   - Hitung nilai utility untuk setiap alternatif berdasarkan masing-masing kriteria.
+   - Utility adalah ukuran preferensi untuk nilai suatu kriteria, biasanya dinyatakan dalam skala 0-1.
 
-4. **Hitung Utility:**
-
-    | Alternatif | Harga | Kinerja | Daya Tahan Baterai | Norm Harga | Norm Kinerja | Norm Baterai | Utility Harga | Utility Kinerja | Utility Baterai |
-    |------------|-------|---------|--------------------|------------|--------------|--------------|---------------|-----------------|-----------------|
-    | A1         | 15    | 8       | 10                 | 1          | 0.5          | 1            | =H2*$G$2      | =I2*$G$3        | =J2*$G$4        |
-    | A2         | 20    | 9       | 8                  | 0          | 1            | 0            | =H3*$G$2      | =I3*$G$3        | =J3*$G$4        |
-    | A3         | 18    | 7       | 9                  | 0.4        | 0            | 0.5          | =H4*$G$2      | =I4*$G$3        | =J4*$G$4        |
-
-5. **Hitung Total Utility:**
-
-    | Alternatif | Harga | Kinerja | Daya Tahan Baterai | Norm Harga | Norm Kinerja | Norm Baterai | Utility Harga | Utility Kinerja | Utility Baterai | Total Utility |
-    |------------|-------|---------|--------------------|------------|--------------|--------------|---------------|-----------------|-----------------|---------------|
-    | A1         | 15    | 8       | 10                 | 1          | 0.5          | 1            | 0.4           | 0.15            | 0.3             | =K2+L2+M2     |
-    | A2         | 20    | 9       | 8                  | 0          | 1            | 0            | 0             | 0.3             | 0               | =K3+L3+M3     |
-    | A3         | 18    | 7       | 9                  | 0.4        | 0            | 0.5          | 0.16          | 0               | 0.15            | =K4+L4+M4     |
+5. **Penghitungan Total Utility:**
+   - Hitung total utility untuk setiap alternatif dengan menjumlahkan utility yang sudah dikalikan dengan bobot kriteria masing-masing.
+   - Total utility menunjukkan seberapa baik suatu alternatif memenuhi semua kriteria yang telah ditentukan.
 
 6. **Peringkat Alternatif:**
+   - Peringkatkan alternatif berdasarkan total utility yang dihitung.
+   - Alternatif dengan total utility tertinggi dianggap sebagai alternatif terbaik.
 
-    | Alternatif | Total Utility | Peringkat |
-    |------------|---------------|-----------|
-    | A1         | 0.85          | 1         |
-    | A3         | 0.31          | 2         |
-    | A2         | 0.30          | 3         |
+## Contoh Kasus
 
-Dengan langkah-langkah di atas, Anda dapat menentukan laptop terbaik menggunakan metode MAUT dalam Excel.
+Misalkan kita memiliki tiga alternatif (A1, A2, A3) dan tiga kriteria (C1, C2, C3) dengan bobot masing-masing 0.4, 0.3, dan 0.3. Berikut adalah tabel nilai alternatif untuk setiap kriteria:
+
+| Alternatif | C1 | C2 | C3 |
+|------------|----|----|----|
+| A1         | 8  | 7  | 9  |
+| A2         | 6  | 9  | 8  |
+| A3         | 7  | 6  | 7  |
+
+### Langkah 1: Normalisasi Matriks Keputusan
+
+Normalisasi dapat dilakukan dengan metode min-max atau lainnya. Misalkan kita gunakan min-max:
+
+\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]
+
+### Langkah 2: Menghitung Utility
+
+Setelah normalisasi, kita hitung nilai utility untuk masing-masing alternatif dan kriteria.
+
+### Langkah 3: Menghitung Total Utility
+
+Total utility untuk setiap alternatif dihitung dengan formula:
+
+\[ \text{Total Utility} = (U1 \times W1) + (U2 \times W2) + (U3 \times W3) \]
+
+### Langkah 4: Peringkat Alternatif
+
+Alternatif dengan nilai total utility tertinggi adalah alternatif terbaik.
+
+## Implementasi dalam Python
+
+Berikut adalah contoh implementasi sederhana dalam Python:
+
+```python
+import numpy as np
+
+# Data input
+alternatives = np.array([[8, 7, 9], [6, 9, 8], [7, 6, 7]])
+weights = np.array([0.4, 0.3, 0.3])
+
+# Normalisasi menggunakan metode min-max
+norm_alternatives = (alternatives - alternatives.min(axis=0)) / (alternatives.max(axis=0) - alternatives.min(axis=0))
+
+# Menghitung utility
+utility = norm_alternatives * weights
+
+# Menghitung total utility untuk setiap alternatif
+total_utility = utility.sum(axis=1)
+
+# Peringkat alternatif
+rankings = np.argsort(total_utility)[::-1]
+
+print("Peringkat Alternatif: ", rankings + 1)  # +1 karena indeks mulai dari 0
