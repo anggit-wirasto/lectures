@@ -93,9 +93,9 @@ Hitung jumlah setiap kolom di matriks:
 | **Jumlah Kolom** | 9     | 3.333   | 1.7        |
 
 Cara menghitung:
-- **Jumlah kolom Biaya**: \(1 + 3 + 5 = 9\)
+- **Jumlah kolom Biaya**: $$\(1 + 3 + 5 = 9\)$$
 - **Jumlah kolom Kinerja**: $$\( \frac{1}{3} + 1 + 2 = 3.333 \)$$
-- **Jumlah kolom Daya Tahan**: \( \frac{1}{5} + \frac{1}{2} + 1 = 1.7 \)
+- **Jumlah kolom Daya Tahan**: $$\( \frac{1}{5} + \frac{1}{2} + 1 = 1.7 \)$$
 
 ### Langkah 3: Normalisasi Matriks
 
@@ -108,15 +108,15 @@ Normalisasi dilakukan dengan membagi setiap elemen matriks dengan jumlah kolomny
 | **Daya Tahan**| 0.556   | 0.6     | 0.588      |
 
 Cara menghitung:
-- **Biaya vs. Biaya**: \( \frac{1}{9} = 0.111 \)
-- **Biaya vs. Kinerja**: \( \frac{1/3}{3.333} = 0.1 \)
-- **Biaya vs. Daya Tahan**: \( \frac{1/5}{1.7} = 0.117 \)
-- **Kinerja vs. Biaya**: \( \frac{3}{9} = 0.333 \)
-- **Kinerja vs. Kinerja**: \( \frac{1}{3.333} = 0.3 \)
-- **Kinerja vs. Daya Tahan**: \( \frac{1/2}{1.7} = 0.294 \)
-- **Daya Tahan vs. Biaya**: \( \frac{5}{9} = 0.556 \)
-- **Daya Tahan vs. Kinerja**: \( \frac{2}{3.333} = 0.6 \)
-- **Daya Tahan vs. Daya Tahan**: \( \frac{1}{1.7} = 0.588 \)
+- **Biaya vs. Biaya**: $$\( \frac{1}{9} = 0.111 \)$$
+- **Biaya vs. Kinerja**: $$\( \frac{1/3}{3.333} = 0.1 \)$$
+- **Biaya vs. Daya Tahan**: $$\( \frac{1/5}{1.7} = 0.117 \)$$
+- **Kinerja vs. Biaya**: $$\( \frac{3}{9} = 0.333 \)$$
+- **Kinerja vs. Kinerja**: $$\( \frac{1}{3.333} = 0.3 \)$$
+- **Kinerja vs. Daya Tahan**: $$\( \frac{1/2}{1.7} = 0.294 \)$$
+- **Daya Tahan vs. Biaya**: $$\( \frac{5}{9} = 0.556 \)$$
+- **Daya Tahan vs. Kinerja**: $$\( \frac{2}{3.333} = 0.6 \)$$
+- **Daya Tahan vs. Daya Tahan**: $$\( \frac{1}{1.7} = 0.588 \)$$
 
 ### Langkah 4: Hitung Rata-rata Setiap Baris
 
@@ -129,9 +129,9 @@ Hitung rata-rata dari setiap baris yang telah dinormalisasi untuk mendapatkan bo
 | **Daya Tahan** | 0.582  |
 
 Cara menghitung:
-- **Biaya**: \( \frac{0.111 + 0.1 + 0.117}{3} = 0.109 \)
-- **Kinerja**: \( \frac{0.333 + 0.3 + 0.294}{3} = 0.309 \)
-- **Daya Tahan**: \( \frac{0.556 + 0.6 + 0.588}{3} = 0.582 \)
+- **Biaya**: $$\( \frac{0.111 + 0.1 + 0.117}{3} = 0.109 \)$$
+- **Kinerja**: $$\( \frac{0.333 + 0.3 + 0.294}{3} = 0.309 \)$$
+- **Daya Tahan**: $$\( \frac{0.556 + 0.6 + 0.588}{3} = 0.582 \)$$
 
 ### Kesimpulan
 
@@ -199,7 +199,7 @@ Misalkan kita memiliki tiga alternatif (A1, A2, A3) dan tiga kriteria (C1, C2, C
 
 Normalisasi dapat dilakukan dengan metode min-max atau lainnya. Misalkan kita gunakan min-max:
 
-\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]
+$$\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]$$
 
 ### Langkah 2: Menghitung Utility
 
@@ -209,7 +209,7 @@ Setelah normalisasi, kita hitung nilai utility untuk masing-masing alternatif da
 
 Total utility untuk setiap alternatif dihitung dengan formula:
 
-\[ \text{Total Utility} = (U1 \times W1) + (U2 \times W2) + (U3 \times W3) \]
+$$\[ \text{Total Utility} = (U1 \times W1) + (U2 \times W2) + (U3 \times W3) \]$$
 
 ### Langkah 4: Peringkat Alternatif
 
