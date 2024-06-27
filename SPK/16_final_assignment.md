@@ -19,7 +19,7 @@
 Berisi latar belakang kasus yang dijadikan bahan studi, dan mengapa Anda memilih kasus ini.
 
 ### 2. Metode
-Jelaskan bagaimana pengambilan data dilakukan, dan langkah-langkah perhitungan menggunakan kedua metode.
+Jelaskan bagaimana pengambilan data dilakukan, dan langkah-langkah perhitungan menggunakan kedua metode. Jelaskan proses pembobotan kriteria, dan alasan yang mendasari pemberian nilai bobot untuk setiap kriteria.
 
 ### 3. Hasil dan Pembahasan
 Bandingkan hasil dari kedua metode, deskripsikan persamaan dan perbedaannya. Bandingkan proses dari kedua metode (dapat dilihat dari kerumitan, waktu yang diperlukan untuk perhitungan). Sebutkan mana metode yang lebih tepat untuk digunakan, uraikan alasannya.
