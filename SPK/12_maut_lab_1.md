@@ -178,4 +178,4 @@ df['Total Utility'] = df['Utility Harga'] + df['Utility Kinerja'] + df['Utility 
 df['Peringkat'] = df['Total Utility'].rank(ascending=False)
 
 # Tampilkan hasil
-print(df[['Alternatif', 'Total Utility', 'Peringkat']])
+print(df[['Alternatif', 'Total Utility', 
