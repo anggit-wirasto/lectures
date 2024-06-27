@@ -27,11 +27,11 @@ Kriteria yang digunakan dan bobotnya adalah sebagai berikut:
 
 Untuk harga, nilai yang lebih rendah lebih baik, jadi kita menggunakan formula:
 
-\[ \text{Normalized Value} = \frac{\text{Max Value} - \text{Value}}{\text{Max Value} - \text{Min Value}} \]
+$$\[ \text{Normalized Value} = \frac{\text{Max Value} - \text{Value}}{\text{Max Value} - \text{Min Value}} \]$$
 
 Untuk kinerja dan daya tahan baterai, nilai yang lebih tinggi lebih baik, jadi kita menggunakan formula:
 
-\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]
+$$\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]$$
 
 ### Excel Formula untuk Normalisasi
 
@@ -120,10 +120,10 @@ Laptop A1 dengan total utility tertinggi adalah pilihan terbaik berdasarkan krit
 ### Langkah 1: Normalisasi Matriks Keputusan
 
 Untuk harga, nilai yang lebih rendah lebih baik, jadi kita menggunakan formula:
-\[ \text{Normalized Value} = \frac{\text{Max Value} - \text{Value}}{\text{Max Value} - \text{Min Value}} \]
+$$\[ \text{Normalized Value} = \frac{\text{Max Value} - \text{Value}}{\text{Max Value} - \text{Min Value}} \]$$
 
 Untuk kinerja dan daya tahan baterai, nilai yang lebih tinggi lebih baik, jadi kita menggunakan formula:
-\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]
+$$\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]$$
 
 ### Langkah 2: Menghitung Utility
 

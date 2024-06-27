@@ -22,11 +22,11 @@
 
 Untuk biaya dan jarak, nilai yang lebih rendah lebih baik, jadi kita menggunakan formula:
 
-\[ \text{Normalized Value} = \frac{\text{Max Value} - \text{Value}}{\text{Max Value} - \text{Min Value}} \]
+$$\[ \text{Normalized Value} = \frac{\text{Max Value} - \text{Value}}{\text{Max Value} - \text{Min Value}} \]$$
 
 Untuk tingkat keberhasilan, nilai yang lebih tinggi lebih baik, jadi kita menggunakan formula:
 
-\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]
+$$\[ \text{Normalized Value} = \frac{\text{Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}} \]$$
 
 ### Rumus Excel untuk Normalisasi
 
