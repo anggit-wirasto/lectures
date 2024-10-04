@@ -2,6 +2,7 @@
 Peluang bersyarat (conditional probability) adalah peluang terjadinya suatu peristiwa dengan asumsi bahwa peristiwa lain sudah terjadi. Dalam istilah matematis, peluang bersyarat dari peristiwa A terjadi, dengan syarat bahwa peristiwa B sudah terjadi, dinyatakan sebagai 𝑃(𝐴∣𝐵), yang dibaca sebagai "peluang 𝐴 terjadi diberikan 𝐵 terjadi."
 
 Rumus dasar peluang bersyarat adalah:
+
 $$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
 
 Dimana:
@@ -19,16 +20,19 @@ Dari contoh di atas maka:
 
 ### P(B)
 Peluang terambilnya bola merah pada pengambilan pertama adalah:
+
 $$P(B) = \frac{3}{5}$$
 Nilai di atas diperoleh dari jumlah bola merah yaitu tiga bola, dan total bola di dalam kotak ada lima bola.
 
 ### P(A)
 Peluang terambilnya bola biru pada pengambilan kedua adalah:
+
 $$P(A) = \frac{2}{4}$$
 Nilai di atas diperoleh dari jumlah bola biru (tanpa mempedulikan bola pertama yang terambil) sebanyak dua bola, dan total bola tersisa pada pengambilan kedua ada empat bola.
 
 ### P(A ∩ B)
 Peluang terambilnya bola merah pada pengambilan pertama dan bola biru pada pengambilan kedua adalah:
+
 $$P(A \cap B) = P(A) . P(B)$$
 $$P(A \cap B) = \frac{2}{4} . \frac{3}{5} = \frac{6}{20} = \frac{3}{10}$$
 
@@ -61,6 +65,7 @@ Untuk pengambilan pertama bola biru, kemungkinannya adalah:
 - b2 - m3
 
 Dari daftar di atas, ada 20 kombinasi kemungkinan hasil pengambilan bola, dan ada enam kombinasi yang memenuhi syarat bola pertama merah dan bola kedua biru, sesuai dengan perhitungan sebelumnya bahwa
+
 $$P(A \cap B) = \frac{6}{20} = \frac{3}{10}$$
 
 ## P(A | B)
