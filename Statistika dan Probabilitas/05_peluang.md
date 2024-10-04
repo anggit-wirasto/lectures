@@ -8,5 +8,5 @@ $$
 
 Dimana:
 - $$P(A|B) \text{ adalah peluang terjadinya peristiwa A jika diketahui bahwa peristiwa B terjadi}$$
-- $$ P(A \cap B) \text{ adalah peluang terjadinya kedua peristiwa A dan B secara bersamaan}$$
-- $$ P(B) \text{ adalah peluang terjadinya peristiwa B}$$
+- $$P(A \cap B) \text{ adalah peluang terjadinya kedua peristiwa A dan B secara bersamaan}$$
+- $$P(B) \text{ adalah peluang terjadinya peristiwa B}$$
