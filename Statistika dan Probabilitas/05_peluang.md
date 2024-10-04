@@ -7,6 +7,12 @@ P(A|B) = \frac{P(A \cap B)}{P(B)}
 $$
 
 Dimana:
-- $$P(A|B) \text{ adalah peluang terjadinya peristiwa A jika diketahui bahwa peristiwa B terjadi}$$
-- $$P(A \cap B) \text{ adalah peluang terjadinya kedua peristiwa A dan B secara bersamaan}$$
-- $$P(B) \text{ adalah peluang terjadinya peristiwa B}$$
+- P(A|B) adalah peluang terjadinya peristiwa A jika diketahui bahwa peristiwa B terjadi
+- P(A ∩ B) adalah peluang terjadinya kedua peristiwa A dan B secara bersamaan
+- P(B) adalah peluang terjadinya peristiwa B
+
+Contoh:
+Sebuah kotak berisi tiga bola merah dan dua bola biru. Apabila dilakukan pengambilan bola dari kotak sebanyak dua kali tanpa dikembalikan, berapa peluang pada pengambilan kedua akan terambil bola biru, jika pada pengambilan pertama terambil bola merah?
+
+Dari contoh di atas maka: 
+- P(B) adalah peluang terambilnya bola merah pada pengambilan pertama
