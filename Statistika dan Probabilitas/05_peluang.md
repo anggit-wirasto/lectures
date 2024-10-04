@@ -17,6 +17,7 @@ Dari contoh di atas maka:
 - P(A|B) adalah peluang terambilnya bola biru pada pengambilan kedua, jika pada pengambilan pertama mendapatkan bola merah
 - P(A ∩ B) adalah peluang terambilnya bola merah pada pengambilan pertama dan bola biru pada pengambilan kedua, dari semua kemungkinan kombinasi pengambilan bola
 - P(B) adalah peluang terambilnya bola merah pada pengambilan pertama
+- P(A) adalah peluang terambilnya bola biru pada pengambilan kedua
 
 ### P(B)
 Peluang terambilnya bola merah pada pengambilan pertama adalah:
@@ -72,6 +73,10 @@ Dari daftar di atas, ada 20 kombinasi kemungkinan hasil pengambilan bola, dan ad
 $$P(A \cap B) = \frac{6}{20} = \frac{3}{10}$$
 
 ## P(A | B)
+Perlu dipahami perbedaan antara P(A ∩ B) dan P(A | B). P(A ∩ B) adalah peluang terjadinya kejadian A dan B secara bersamaan, dalam hal ini kemungkinan terambilnya bola merah-biru secara berurutan, dari semua kemungkinan kombinasi pengambilan bola.
+
+Adapun P(A | B) adalah peluang kejadian A **setelah** kejadian B terjadi, dengan kata lain bahwa pengambilan bola pertama sudah dilakukan dan hasilnya adalah bola merah.
+
 Sesuai dengan rumus dasar peluang bersyarat, kemudian dapat dihitung bahwa:
 
 $$P(A|B) = \frac{\frac{3}{10}}{\frac{3}{5}}$$
