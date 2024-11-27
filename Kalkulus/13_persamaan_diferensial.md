@@ -1,0 +1,7 @@
+# Persamaan Diferensial
+
+Pada beberapa pertemuan sebelumnya, kita telah melihat bahwa turunan suatu fungsi memberikan informasi tentang laju perubahan fungsi tersebut. **Teorema Fundamental Kalkulus** membantu kita menentukan perubahan total suatu fungsi pada suatu interval berdasarkan laju perubahannya. 
+
+Sebagai contoh, kecepatan suatu objek menunjukkan laju perubahan posisi objek tersebut. Dengan mengintegralkan kecepatan selama suatu interval waktu, kita dapat menentukan seberapa banyak posisi objek berubah selama interval waktu tersebut. Jika kita mengetahui posisi awal objek pada awal interval, kita memiliki cukup informasi untuk memprediksi posisinya pada akhir interval.
+
+Pada pertemuan ini kita akan mempelajari konsep persamaan diferensial. Persamaan diferensial adalah persamaan yang memberikan deskripsi tentang turunan suatu fungsi, yang berarti ia memberi tahu kita laju perubahan fungsi tersebut. Dengan menggunakan informasi ini, kita ingin mempelajari sebanyak mungkin tentang fungsi itu sendiri. Idealnya, kita ingin memiliki deskripsi aljabar dari fungsi tersebut. Namun, dalam beberapa situasi hal ini mungkin terlalu sulit untuk dilakukan, tetapi kita masih dapat membuat perkiraan yang akurat.

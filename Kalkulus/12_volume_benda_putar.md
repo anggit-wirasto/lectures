@@ -109,3 +109,9 @@ di mana radiusnya adalah 3 dan tingginya adalah 5 sehingga
 $V_{kerucut} = \frac{1}{3}\pi 3^2.5 = 15\pi$ satuan kubik
 
 Sehingga terbukti bahwa perhitungan secara integral dan rumus volume kerucut memberikan hasil yang sama.
+
+Secara umum untuk menghitung volume benda putar yang dibatasi oleh garis $x=a$ dan $x=b$ serta kurva $y=f(x)$ yang diputar $360^o$ terhadap sumbu $x$ dapat digunakan formula sebagai berikut:
+
+$$V = \int_a^b f^2(x).dx$$
+
+Metode ini dikenal sebagai metode **cakram**.
