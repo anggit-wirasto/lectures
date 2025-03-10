@@ -44,19 +44,30 @@ Fungsi keanggotaan menentukan nilai keanggotaan setiap elemen dalam semesta pemb
 ### 2.1 Bentuk-Bentuk Fungsi Keanggotaan
 Beberapa bentuk fungsi keanggotaan yang umum digunakan adalah:
 1. **Fungsi Keanggotaan Segitiga (Triangular Membership Function)**
-   $$\mu_A(x) = \begin{cases} 0, & x \leq a \frac{x-a} {b-a}, & a < x < b \\ \frac{c-x}{c-b}, & b < x < c  0, & x \geq c \end{cases}$$
+   $$
+   \mu_A(x) = \begin{cases} 
+   0, & x \leq a \\ 
+   \frac{x-a}{b-a}, & a < x < b \\ 
+   \frac{c-x}{c-b}, & b < x < c \\ 
+   0, & x \geq c
+   \end{cases}
+   $$
 
 2. **Fungsi Keanggotaan Trapesium (Trapezoidal Membership Function)**
-   $$\mu_A(x) = \begin{cases} 
+   $$
+   \mu_A(x) = \begin{cases} 
    0, & x \leq a \\ 
    \frac{x-a}{b-a}, & a < x < b \\ 
    1, & b \leq x \leq c \\ 
    \frac{d-x}{d-c}, & c < x < d \\ 
    0, & x \geq d
-   \end{cases}$$
+   \end{cases}
+   $$
 
 3. **Fungsi Keanggotaan Gaussian (Gaussian Membership Function)**
-   $$\mu_A(x) = e^{-\frac{(x - c)^2}{2 \sigma^2}}$$
+   $$
+   \mu_A(x) = e^{-\frac{(x - c)^2}{2 \sigma^2}}
+   $$
    Fungsi ini digunakan dalam banyak aplikasi karena sifatnya yang halus dan kontinu.
 
 ### 2.2 Contoh Implementasi Fungsi Keanggotaan
